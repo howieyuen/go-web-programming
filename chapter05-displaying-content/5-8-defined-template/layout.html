@@ -6,7 +6,9 @@
     <title>Go Web Programming</title>
   </head>
   <body>
-    {{ template "content" }}
+    {{block "content" .}}
+        <h1 style="color: #66afe9">hello world</h1>
+    {{end}}
   </body>
 </html>
 
